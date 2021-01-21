@@ -9,11 +9,12 @@ import com.example.myapplication.demo.bean.ILife;
 import com.example.myapplication.demo.bean.TomDog;
 
 import org.junit.Assert;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.junit.Test;
 
 import mockit.Capturing;
 import mockit.Delegate;
@@ -626,7 +627,7 @@ public class JMockitDemo implements IDemo, IVerify {
 
     @Override
     @Test
-    public void verifyNotInvokeWithTimes() {
+    public void verifyInvokeWithTimes() {
         final Dog dog = new Dog();
         new Expectations(dog) {
             {
@@ -643,4 +644,5 @@ public class JMockitDemo implements IDemo, IVerify {
             }
         };
     }
+
 }

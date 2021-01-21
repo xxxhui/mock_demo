@@ -34,5 +34,5 @@ public interface IVerify {
     /**
      * 验证调用n次
      */
-    void verifyNotInvokeWithTimes();
+    void verifyInvokeWithTimes();
 }
